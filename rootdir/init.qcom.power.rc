@@ -103,7 +103,8 @@ on property:dev.bootcomplete=1
     # Set max mA current for usb/dc charger
     write /sys/class/power_supply/qpnp-dc/current_max 1800000
     write /sys/class/power_supply/usb/current_max 1500000
+    write /sys/module/intelli_plug/parameters/intelli_plug_active 1
+    write /sys/module/intelli_plug/parameters/touch_boost_active 0
 
     rm /data/system/perfd/default_values
     setprop sys.io.scheduler "bfq"
-    start mpdecision
