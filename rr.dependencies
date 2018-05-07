@@ -1,0 +1,19 @@
+[                                                                                                                                                                                                                    
+  {                                                                                                                                                                                                                  
+    "repository": "ResurrectionRemix-Devices/android_device_sony_msm8974-common",                                                                                                                                    
+    "target_path": "device/sony/msm8974-common"                                                                                                                                                                      
+  },                                                                                                                                                                                                                 
+  {                                                                                                                                                                                                                  
+    "repository": "ResurrectionRemix-Devices/android_kernel_sony_msm8974",                                                                                                                                           
+    "target_path": "kernel/sony/msm8974"                                                                                                                                                                             
+  },                                                                                                                                                                                                                 
+  {                                                                                                                                                                                                                  
+    "repository": "omnirom/android_hardware_broadcom_fm",                                                                                                                                                            
+    "target_path": "hardware/broadcom/fm",                                                                                                                                                                           
+    "revision": "android-8.1"                                                                                                                                                                                        
+  },                                                                                                                                                                                                                 
+  {                                                                                                                                                                                                                  
+    "repository": "sahulkrishan/packages_apps_ancquicksettings",                                                                                                                                                     
+    "target_path": "packages/apps/ANCQuickSettings",                                                                                                                                                                 
+  }                                                                                                                                                                                                                  
+]    
