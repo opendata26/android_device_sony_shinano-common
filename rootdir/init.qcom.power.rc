@@ -91,6 +91,10 @@ on enable-low-power
     write /sys/module/cpu_boost/parameters/input_boost_freq 1190400
     write /sys/module/cpu_boost/parameters/input_boost_ms 40
 
+    write /sys/module/intelli_plug/parameters/intelli_plug_active 1
+    write /sys/module/intelli_plug/parameters/nr_run_hysteresis 1
+    write /sys/module/intelli_plug/parameters/cpu_nr_run_threshold 690
+
 on boot
     trigger enable-low-power
 
@@ -106,4 +110,3 @@ on property:dev.bootcomplete=1
 
     rm /data/system/perfd/default_values
     setprop sys.io.scheduler "bfq"
-    start mpdecision
