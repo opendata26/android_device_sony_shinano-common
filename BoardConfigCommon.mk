@@ -138,3 +138,6 @@ BOARD_SYSTEMIMAGE_PARTITION_SIZE := 2671771648
 # Recovery
 TARGET_RECOVERY_FSTAB := device/sony/shinano-common/rootdir/fstab.full
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBA_8888"
+
+# Off mode charger
+WITH_LINEAGE_CHARGER := true
