@@ -79,7 +79,7 @@ PRODUCT_PACKAGES += \
 
 # Assertive Display
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/ad_calib.cfg:system/etc/ad_calib.cfg
+    $(LOCAL_PATH)/configs/ad_calib.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/ad_calib.cfg
 
 # Bluetooth
 PRODUCT_PACKAGES += \
@@ -87,9 +87,9 @@ PRODUCT_PACKAGES += \
    
 # RIL
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/netmgr_config.xml:system/etc/data/netmgr_config.xml \
-    $(LOCAL_PATH)/configs/dsi_config.xml:system/etc/data/dsi_config.xml \
-    $(LOCAL_PATH)/configs/qmi_config.xml:system/etc/data/qmi_config.xml
+    $(LOCAL_PATH)/configs/netmgr_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/netmgr_config.xml \
+    $(LOCAL_PATH)/configs/dsi_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/dsi_config.xml \
+    $(LOCAL_PATH)/configs/qmi_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/qmi_config.xml
 
 # Media profile
 PRODUCT_COPY_FILES += \
@@ -117,7 +117,7 @@ PRODUCT_PACKAGES += \
 
 # IPC Security Config
 PRODUCT_COPY_FILES += \
-    $(COMMON_PATH)/rootdir/system/etc/sec_config:system/vendor/etc/sec_config
+    $(COMMON_PATH)/rootdir/system/etc/sec_config:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config
 
 # Keystore
 PRODUCT_PACKAGES += \
